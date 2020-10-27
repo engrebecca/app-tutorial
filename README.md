@@ -25,7 +25,13 @@ This is a Node.js application that uses [Sequelize](https://sequelize.org/) and 
     * In the "/members" route, the isAuthenticated middlware verifies if a user is logged in before they can access the route. If they are logged in, the *members.html* page will render. Otherwise, they will be redirected to the *signup.html* page.
 
 ### Public Files
-* xxxx
+* The *login.js* file validates user inputs to the form on the *login.html* page when they click submit. It checks if there is an email and password entered. If there is a valid email and password, it makes a POST request to the server via the login route and sends the email and password. Once a response is received from the server, it redirects the user to the members page.
+* The *members.js* file sends a GET request to the server via the user_data route. Once a response is received from the server, it displays the user's email on the *members.html* page.
+* The *signup.js* file validates user inputs to the form on the *signup.html* page when they click submit. It checks that the email and password fields are not blank. If an email and password are entered, it will send a POST request to the server via the signup route with the email and password. If successful, it will then redirect the user to the members page.
+* The *login.html* file includes the HTML for the login page. There is a form for the user to enter their email and password for login.
+* The *members.html* file includes the HTML for the members page. There is a div that will display "Welcome" + the member's name.
+* The *signup.html* file includes the HTML for the signup page. There is a form for the user to enter their email and password to sign up.
+* The *style.css* file formats the signup and login forms with a top margin of 50px.
 
 ### Server
 * xxxx
