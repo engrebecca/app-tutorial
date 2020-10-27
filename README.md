@@ -34,6 +34,6 @@ This is a Node.js application that uses [Sequelize](https://sequelize.org/) and 
 * The *style.css* file formats the signup and login forms with a top margin of 50px.
 
 ### Server
-* xxxx
+* The *server.js* file runs the server for the application. It requires passport which is imported from *passport.js*. It also requires all the models which are imported from *index.js* as db. And it requires the HTML and API routes. It configures the middleware that is needed for authentication and keeps track of a user's login status. Lastly, it syncs the database and console logs a message to the user if the connection is successful.
 
 ## Updates for Future Development
