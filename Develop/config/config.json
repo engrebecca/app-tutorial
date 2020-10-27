@@ -1,10 +1,9 @@
 // Config.json stores details about the environment the database will run in. 
 // The information stored in the development, test, and production objects will be used to create a connection to the correct database depending on the environment.
 {
-  // Development refers to the database that will be used during development. Username, password, and database should be updated to reflect the programmer's local database.
   "development": {
     "username": "root",
-    "password": null,
+    "password": "password",
     "database": "passport_demo",
     "host": "127.0.0.1",
     "dialect": "mysql"
