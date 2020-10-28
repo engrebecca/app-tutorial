@@ -1,3 +1,4 @@
+/* Adds a top bargin to forms */
 form.signup,
 form.login {
   margin-top: 50px;
