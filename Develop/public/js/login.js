@@ -1,17 +1,19 @@
-$(document).ready(function() {
+$(document).ready(function () {
   // Getting references to our form and inputs
   var loginForm = $("form.login");
   var emailInput = $("input#email-input");
   var passwordInput = $("input#password-input");
 
   // When the form is submitted, we validate there's an email and password entered
-  loginForm.on("submit", function(event) {
+  loginForm.on("submit", function (event) {
     event.preventDefault();
+    // Creating a object that contains the email and password inputs from the form that are trimmed
     var userData = {
       email: emailInput.val().trim(),
       password: passwordInput.val().trim()
     };
 
+    // If there are no values for email and password, return
     if (!userData.email || !userData.password) {
       return;
     }
@@ -28,11 +30,11 @@ $(document).ready(function() {
       email: email,
       password: password
     })
-      .then(function() {
+      .then(function () {
         window.location.replace("/members");
         // If there's an error, log the error
       })
-      .catch(function(err) {
+      .catch(function (err) {
         console.log(err);
       });
   }
