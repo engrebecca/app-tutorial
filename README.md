@@ -68,7 +68,7 @@ Below is an image that shows how a client sends a request to a server, and how a
 Below is an image of the login page
 ![Request Response Cycle](assets/website.png)
 
-* The *login.js* file validates user inputs to the form on the *login.html* page when they click submit. It checks if there is an email and password entered. If there is a valid email and password, it makes a POST request to the server via the login route and sends the email and password. Once a response is received from the server, it redirects the user to the members page.
+* The *login.js* file validates user inputs to the form on the *login.html* page when they click login. It checks if there is an email and password entered. If there is a valid email and password, it makes a POST request to the server via the login route and sends the email and password. Once a response is received from the server, it redirects the user to the members page.
     * 🔃 --sends POST requests to login API route
 * The *members.js* file sends a GET request to the server via the user_data route. Once a response is received from the server, it displays the user's email on the *members.html* page.
     * 🔃 --sends GET requests to user_data API route
