@@ -3,6 +3,8 @@
 ## Purpose
 This is a Node.js application that uses [Sequelize](https://sequelize.org/) and [Passport](http://www.passportjs.org/) to manage member sign ins and sign ups at a website. Passport is used to authenticate a member's username and password. Sequelize is used to retrieve and gather member information from a database. It is also used to create new entries in the database for new member sign ups.
 
+Below is a tutorial that walks through the application's code file by file.
+
 ## Emoji Legend
 Emoji | Meaning
 ------|--------
@@ -100,7 +102,10 @@ Conversley, if a user would like to no longer be a member of the website, there 
 ## Credits
 [Bytes of Gigabytes](https://bytesofgigabytes.com/networking/how-http-request-and-response-works/) - the request and response image
 
+## Questions
+If you have any questions or comments, please open a Issue ticket or reach out on [LinkedIn](https://www.linkedin.com/in/engrebecca/).
+You can view more of my work over on my [GitHub](https://github.com/engrebecca) page.
+Thanks for checking out my tutorial!
+
 ## Author
-* Rebecca Eng
-* [GitHub](https://github.com/engrebecca)
-* [LinkedIn](https://www.linkedin.com/in/engrebecca/)
+Rebecca Eng
